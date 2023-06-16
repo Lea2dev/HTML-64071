@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+/* comentario */
+body {
+    background-color: #f6f6f6;
+    text-decoration: underline;
+    font-family: 'Kablammo', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+}
+p {
+    background-color: cornflowerblue;
+}
+
+:root{
+    font-size:16px;
+}
