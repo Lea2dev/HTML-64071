@@ -9,10 +9,15 @@ h2 strong{
     font-size: 72px;
 }
 
-h3{
-
+h1,h2,h3,h4 {
+    color: black;
 }
 
-h4{
+h2,h3{
+    font-size: 20px;
+    background-color: #fcee21;
+}
 
+footer h1{
+    font-size: 33px;
 }
