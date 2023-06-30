@@ -21,3 +21,13 @@ h2,h3{
 footer h1{
     font-size: 33px;
 }
+
+ol{
+    font-size: 2em;
+    font-weight: 400;
+    list-style-position: inside;
+}
+
+label{
+    display: block;
+}
