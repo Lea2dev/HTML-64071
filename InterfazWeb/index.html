@@ -33,7 +33,7 @@
 
     <main>
         <section>
-            <img src="img/fo to.png">
+            <img src="img/foto.png">
             <h3>¡Hola! Somos SOFI & JULIA,</h3>
 
             <p>las social media managers, las creadoras de contenido, las copywriters, las generadoras de leads, las
@@ -50,7 +50,7 @@
 
         <section>
             <a id="servicios"></a>
-            <img src="img/img-se rvicios.png">
+            <img src="img/img-servicios.png">
             <h3>Servicios</h3>
             <ol>
                 <li>Análisis de perfil (Benchmarking)</li>
@@ -69,13 +69,14 @@
             <a id="contacto"></a>
             <p>Envianos tu consulta >></p>
 
-            <form action="codigo.php" method="post">
+            <form action="php/codigo.php" method="post">
                 <label for="nombre">Nombre *</label>
-                <input type="text" id="nombre" required placeholder="Nombre y apellido">
+                <input type="text" name="nombre" id="nombre" required placeholder="Nombre y apellido">
                 <label for="mail">E-Mail *</label>
-                <input type="text" name="mail" id="mail" placeholder="mail@dominio.com.ar" required>
+                <input type="text" name="email" id="mail" placeholder="mail@dominio.com.ar" required>
                 <label for="comentario">Mensaje *</label>
                 <textarea name="comentarios" id="commentario" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar consulta">
             </form>
 
 

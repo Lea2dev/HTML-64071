@@ -2,20 +2,31 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-color: #EEE;
 }
 
-h2 strong{
+h1 strong{
     font-family: 'Coiny', cursive;
     font-size: 72px;
 }
 
-h1,h2,h3,h4 {
+h1{
+    font-family: 'Coiny', cursive;
+}
+
+h2,h3,h4 {
     color: black;
 }
 
 h2,h3{
     font-size: 20px;
     background-color: #fcee21;
+}
+
+nav{
+    width: 100%;
+    border-top: 5px solid #fcee21;
 }
 
 footer h1{
@@ -28,6 +39,20 @@ ol{
     list-style-position: inside;
 }
 
+ul{
+    list-style-type: none;
+}
+
 label{
     display: block;
+}
+
+img{
+    width:100%
+}
+
+a{
+    text-decoration: none;
+    color:#555;
+    margin-right: 30px;
 }
