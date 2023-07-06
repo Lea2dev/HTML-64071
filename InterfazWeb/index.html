@@ -67,16 +67,17 @@
         <section>
             <h4>¿Querés que nos contactemos con vos?</h4>
             <a id="contacto"></a>
-            <p>Envianos tu consulta >></p>
+            <p class="consulta">Envianos tu consulta >></p>
 
             <form action="php/codigo.php" method="post">
-                <label for="nombre">Nombre *</label>
+                <label for="nombre">Nombre <span class="rojo">*</span></label>
                 <input type="text" name="nombre" id="nombre" required placeholder="Nombre y apellido">
-                <label for="mail">E-Mail *</label>
+                <label for="mail">E-Mail  <span class="rojo">*</span></label>
                 <input type="text" name="email" id="mail" placeholder="mail@dominio.com.ar" required>
-                <label for="comentario">Mensaje *</label>
+                <label for="comentario">Mensaje  <span class="rojo">*</span></label>
                 <textarea name="comentarios" id="commentario" cols="30" rows="10"></textarea>
                 <input type="submit" value="Enviar consulta">
+                <input type="reset" value="Borrar">
             </form>
 
 

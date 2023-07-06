@@ -6,6 +6,12 @@ body{
     background-color: #EEE;
 }
 
+/* margenes */
+nav h1, nav ul, header, main, footer{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 h1 strong{
     font-family: 'Coiny', cursive;
     font-size: 72px;
@@ -15,13 +21,19 @@ h1{
     font-family: 'Coiny', cursive;
 }
 
-h2,h3,h4 {
+h2,h3 {
     color: black;
 }
 
 h2,h3{
     font-size: 20px;
     background-color: #fcee21;
+}
+
+h4{
+    color: #FFF;
+    background-color: #000;
+    font-size: 40px;
 }
 
 nav{
@@ -39,12 +51,18 @@ ol{
     list-style-position: inside;
 }
 
+ol li:nth-last-child(1){
+    background-color: #fcee21;
+}
+
 ul{
     list-style-type: none;
 }
 
 label{
     display: block;
+    padding-top: 20px;
+    font-weight: bold;
 }
 
 img{
@@ -55,4 +73,27 @@ a{
     text-decoration: none;
     color:#555;
     margin-right: 30px;
+}
+
+/* form */
+input, textarea{
+    width: 100%;
+}
+
+input[type=submit], input[type=reset]{
+    width:30%;
+    background-color: #000;
+    color: #FFF;
+    font-weight: bold;
+    padding: 7px;
+}
+
+.rojo{
+    color:rgb(200, 0, 0);
+}
+
+.consulta{
+    background-color: #fcee21;
+    font-weight: bold;
+    font-size: 28px;
 }

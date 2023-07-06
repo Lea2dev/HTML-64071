@@ -2,15 +2,15 @@
 // se puede copiar los archivos y pegarlos en C:\xampp\htdocs
 // o subirlos por filezilla
 
-    print_r($_POST);
+    //print_r($_POST);
     echo '<br><br>';
 
     $to = "leandrodpais@gmail.com";
     $subject = "Mail desde el formulario";
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers = $headers . "Content-type:text/html;charset=UTF-8" . "\r\n";
-    //$headers .= 'From: webmaster@example.com' . "\r\n" .
-    //    'Reply-To: webmaster@example.com' . "\r\n";
+    $headers .= 'From: webmaster@example.com' . "\r\n" .
+        'Reply-To: webmaster2@example.com' . "\r\n";
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $comentarios = $_POST['comentarios'];
