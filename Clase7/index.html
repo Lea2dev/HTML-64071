@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            border: 1px solid ;
+            display: flex;
+            justify-content: flex-end;
+            height: 300px;
+            width: 80%;
+            align-items: center;
+        }
+        #rojo{
+            background-color: red;
+            margin-right: auto;
+        }
+        #verde{
+            background-color: green;
+        }
+        #azul{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+<h1>Flex</h1>
+
+<main>
+    <section id="rojo">FLEX 1</section>
+    <section id="verde">FLEX 2</section>
+    <section id="azul">FLEX 3</section>
+</main>
+
+<h2>iFrame</h2>
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/72WZ3WlJsss" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+</iframe>
+
+<video src="index.html" width="200px" height="100px" controls></video>
+
+<audio src="index.html" controls muted loop></audio>
+
+<style>
+    thead th{
+        background-color: burlywood;
+    }
+    th{
+        background-color: beige;
+    }
+</style>
+
+<table border="1" cellpadding="20" cellspacing="0">
+    <thead><!-- primera fila -->
+        <td style="background-color: gray;"></td>
+        <th>Ingresos</th>
+        <th>Egresos</th>
+    </thead>
+    <tr>
+    <tr>
+        <th>Primer Semestre</th>
+        <td>256546</td>
+        <td>36540</td>
+    </tr>
+    <tr>
+        <th>Segundo Semestre</th>
+        <td>354565</td>
+        <td>54655</td>
+    </tr>
+</table>
+<br>
+<table border="1" cellpadding="20" cellspacing="0">
+    <caption>Datos por cuatrimestre</caption>
+    <thead><!-- primera fila -->
+        <td style="background-color: gray;"></td>
+        <th>Dato</th>
+        <th>Dato 2</th>
+    </thead>
+    <tr>
+    <tr>
+        <th>Primer cuatrimestre</th>
+        <td colspan="2">Sin datos</td>
+    </tr>
+    <tr>
+        <th>Segundo cuatrimestre</th>
+        <td>354565</td>
+        <td rowspan="2">54655</td>
+    </tr>
+    <tr>
+        <th>Tercer cuatrimestre</th>
+        <td>354565</td>
+    </tr>
+</table>
+
+<br><br><br><br><br><br><br><br>
+
+</body>
+</html>
