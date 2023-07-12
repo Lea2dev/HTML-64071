@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700&display=swap');
 
+:root{
+    font-size: 20px;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -21,19 +25,23 @@ h1{
     font-family: 'Coiny', cursive;
 }
 
-h2,h3 {
-    color: black;
-}
-
 h2,h3{
+    color: black;
     font-size: 20px;
     background-color: #fcee21;
+    display: inline-block;
 }
 
 h4{
     color: #FFF;
     background-color: #000;
     font-size: 40px;
+}
+
+h5{
+    font-size: 1.7em;
+    /*shorthand margin ->  Arriba derecha abajo izquierda*/
+    margin: 20px 0 20px 0;
 }
 
 nav{
@@ -46,9 +54,14 @@ footer h1{
 }
 
 ol{
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: 400;
     list-style-position: inside;
+    padding: 0px;
+}
+
+ol li{
+    padding-bottom: 10px;
 }
 
 ol li:nth-last-child(1){
@@ -66,7 +79,7 @@ label{
 }
 
 img{
-    width:100%
+    width:100%;
 }
 
 a{
@@ -76,6 +89,10 @@ a{
 }
 
 /* form */
+form{
+    padding-bottom: 50px;
+}
+
 input, textarea{
     width: 100%;
 }
@@ -97,3 +114,36 @@ input[type=submit], input[type=reset]{
     font-weight: bold;
     font-size: 28px;
 }
+
+.encolumnar{
+    display: flex;
+    justify-content: space-between;
+}
+
+#redes{
+    font-size: 33px;
+    color:#888;
+    font-weight: bolder;
+}
+
+section{
+    width: 45%;
+}
+
+@media only screen and (max-width:768px){
+
+    .encolumnar{
+        display: block;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    img{
+        width:70%;
+        margin-left: 15%;
+    }
+
+}
+
