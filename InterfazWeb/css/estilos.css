@@ -4,26 +4,40 @@
     font-size: 20px;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     background-color: #EEE;
+    border-top: 5px solid #fcee21;
 }
 
 /* margenes */
-nav h1, nav ul, header, main, footer{
+nav h1, nav ul, header, main{
     margin-left: 5%;
     margin-right: 5%;
+    max-width: 1200px;
+    margin: auto;
 }
+
+nav{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 
 h1 strong{
     font-family: 'Coiny', cursive;
     font-size: 72px;
 }
 
-h1{
+nav h1{
     font-family: 'Coiny', cursive;
 }
+
 
 h2,h3{
     color: black;
@@ -36,6 +50,8 @@ h4{
     color: #FFF;
     background-color: #000;
     font-size: 40px;
+    display: inline;
+    line-height: 1.7em;
 }
 
 h5{
@@ -46,11 +62,19 @@ h5{
 
 nav{
     width: 100%;
-    border-top: 5px solid #fcee21;
+    
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    background-color: #fcee21;
 }
 
 footer h1{
     font-size: 33px;
+    margin-left: 90px;
+    margin-right: 40px;
 }
 
 ol{
@@ -95,14 +119,22 @@ form{
 
 input, textarea{
     width: 100%;
+    border: 2px solid #888;
+    font-size: 1em;
+    padding: 8px;
+}
+
+textarea{
+    margin-bottom: 25px;
 }
 
 input[type=submit], input[type=reset]{
-    width:30%;
+    width:180px;
     background-color: #000;
     color: #FFF;
     font-weight: bold;
-    padding: 7px;
+    padding: 12px 7px 12px 7px;
+    border: none;
 }
 
 .rojo{
@@ -113,21 +145,37 @@ input[type=submit], input[type=reset]{
     background-color: #fcee21;
     font-weight: bold;
     font-size: 28px;
+    display: inline-block;
 }
 
 .encolumnar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.alineadoTop{
+    align-items: start!important;
 }
 
 #redes{
-    font-size: 33px;
+    font-size: 1em;
     color:#888;
     font-weight: bolder;
+    margin: 0 7% 0 2%;
 }
 
 section{
     width: 45%;
+}
+
+aside{
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+aside img{
+    width: 40%;
 }
 
 @media only screen and (max-width:768px){
@@ -143,6 +191,14 @@ section{
     img{
         width:70%;
         margin-left: 15%;
+    }
+
+    .horizontal{
+        display: flex!important;
+    }
+
+    #redes{
+        display: none;
     }
 
 }
